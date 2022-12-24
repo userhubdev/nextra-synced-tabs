@@ -32,9 +32,9 @@ import { SyncedTabs } from "nextra-synced-tabs";
 
 #### Props
 
-| Name         | Type              | Description                                     |
-| ------------ | ----------------- | ----------------------------------------------- |
-| name         | `string`          | The name of the tab group.                      |
-| items        | `React.ReactNode` | The tab names to be displayed in the tab group. |
-| defaultIndex | `number`          | The default selected index of the tab group.    |
-| children     | `React.ReactNode` | The content panel for each tab.                 |
+| Name         | Type              | Description                                                             |
+| ------------ | ----------------- | ----------------------------------------------------------------------- |
+| name         | `string`          | The name of the tab group. This will be used as a key in local storage. |
+| items        | `React.ReactNode` | The tab names to be displayed in the tab group.                         |
+| defaultIndex | `number`          | The default selected index of the tab group.                            |
+| children     | `React.ReactNode` | The content panel for each tab.                                         |
