@@ -73,7 +73,7 @@
     "**/*.{ts,tsx,js,jsx}": [
       "prettier --write"
     ],
-    "**/*.{md,yml,json}": [
+    "**/*.{md,yml,yaml,json}": [
       "prettier --write"
     ]
   },
