@@ -1,6 +1,8 @@
 # nextra-synced-tabs
 
-Sync selected tabs in your Nextra site and store the selected index in local storage
+Synchronize selected tabs in your Nextra site and store the selected index in local storage
+
+![Demo](/.readme/synced-tabs.gif)
 
 ## Installation
 
@@ -23,3 +25,16 @@ import { SyncedTabs } from "nextra-synced-tabs";
   <SyncedTabs.Tab>**Yarn** is a software packaging system.</SyncedTabs.Tab>
 </SyncedTabs>;
 ```
+
+## API Reference
+
+### \<SyncedTabs\>
+
+#### Props
+
+| Name         | Type              | Description                                     |
+| ------------ | ----------------- | ----------------------------------------------- |
+| name         | `string`          | The name of the tab group.                      |
+| items        | `React.ReactNode` | The tab names to be displayed in the tab group. |
+| defaultIndex | `number`          | The default selected index of the tab group.    |
+| children     | `React.ReactNode` | The content panel for each tab.                 |

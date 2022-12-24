@@ -20,9 +20,7 @@ export function SyncedTabs({
   items,
   defaultIndex,
   children,
-}: Omit<React.ComponentProps<typeof Tabs>, "selectedIndex"> & {
-  name: string;
-}) {
+}: SyncedTabsProps) {
   const isClient = useIsClient();
   const [storedIndex, setIndex] = useLocalStorage(name, defaultIndex);
 
@@ -39,3 +37,13 @@ export function SyncedTabs({
 }
 
 SyncedTabs.Tab = Tab;
+
+export type SyncedTabsProps = Omit<
+  React.ComponentProps<typeof Tabs>,
+  "selectedIndex"
+> & {
+  /**
+   * The name of the tab group in local storage.
+   */
+  name: string;
+};
