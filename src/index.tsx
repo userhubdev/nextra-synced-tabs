@@ -1,4 +1,4 @@
-import { Tab, Tabs } from "nextra-theme-docs";
+import { Tabs, Tab } from "nextra-theme-docs";
 import * as React from "react";
 import { useIsClient, useLocalStorage } from "usehooks-ts";
 
